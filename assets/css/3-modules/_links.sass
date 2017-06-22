@@ -1,0 +1,30 @@
+.transform-link
+	font-weight: 700
+
+	&::after
+		content: ""
+		display: block
+		width: 100%
+		height: 1px
+		background-color: $c-highlight
+		transition: transform .2s ease-out
+
+	&:hover
+		color: $c-hover
+
+	&:hover::after
+		transform: translateY(3px) scaleY(3)
+		background-color: $c-hover
+
+	&--big
+		font-size: 30px
+		font-weight: 700
+		background-color: $c-secondary
+		width: 30%
+		box-shadow: 5px 1px 30px 1px rgba(0,0,0,0.2)
+
+		&:hover
+			background-color: $c-primary
+			color: $c-secondary
+			transition: background-color .4s ease-in-out
+			transition: color .4s ease-in-out

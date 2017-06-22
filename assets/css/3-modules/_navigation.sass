@@ -1,0 +1,154 @@
+.navigation
+	position: relative
+	background-color: $c-background
+	width: 100%
+	height: 130px
+	z-index: 10
+
+	&__home
+		position: absolute
+		background-color: rgba(0,0,0,0.5)
+
+	&__number
+		position: relative
+		font-size: 35px
+		color: $white
+
+	&__wrapper
+		display: flex
+		align-items: center
+		justify-content: space-between
+
+	&__container
+		position: absolute
+		top: 50%
+		left: 50%
+		transform: translate(-50%, -50%)
+		width: 45%
+
+	&__list
+		display: flex
+		justify-content: space-between
+
+		& > li a
+			color: $white
+			font-size: 20px
+			text-transform: uppercase
+			transition: color .2s ease-in-out
+
+			&:hover
+				color: $c-hover
+
+	&__burger
+		display: none
+
+	@media (max-width: 1150px)
+
+		&__number
+			display: none
+
+		&__container
+			left: 62%
+			width: 60%
+
+	@media (max-width: 991px)
+
+		&__home
+			position: absolute
+			background-color: rgba(0,0,0,0.8)
+
+		&__cta
+			display: none
+
+		&__number
+			display: none
+
+		&__container
+			position: fixed
+			top: 0
+			left: 0
+			transform: translate(0, 0)
+			display: flex
+			width: 100%
+			height: 100%
+			align-items: center
+			justify-content: center
+			background-color: #363731
+			opacity: 0
+			visibility: hidden
+			transition: visibility 0s .4s, opacity .4s
+
+			&--is-open
+				opacity: 1
+				visibility: visible
+				transition: visibility 0s, opacity .4s
+
+				.navigation__list
+
+					& > li
+						@for $i from 1 through 4
+							&:nth-child(#{$i}) a
+								transition: transform .3s * $i + .2s, color .2s ease-in-out
+
+						& a
+							transform: translateY(0)
+
+							&:hover
+								color: lighten($c-secondary, 15%)
+
+		&__list
+			height: 250px
+			flex-direction: column
+			align-items: center
+
+			& > li
+				overflow: hidden
+
+				&	a
+					transform: translateY(100%)
+					color: $white
+					font-weight: 700
+					transition: transform 0s .4s
+
+		&__burger
+			position: relative
+			right: 8px
+			display: flex
+			width: 35px
+			height: 27px
+			flex-direction: column
+			justify-content: space-between
+			cursor: pointer
+
+			&--is-open
+
+				.navigation__burger-el
+					transition: transform .4s, opacity .2s
+
+					&--top
+						transform: rotate(45deg)
+
+					&--bottom
+						transform: rotate(-45deg)
+
+					&--middle
+						opacity: 0
+
+			&-el
+				display: block
+				width: 100%
+				height: 3px
+				background-color: $white
+				transition: transform .4s, opacity .2s .2s
+
+				&--top
+					transform-origin: left top
+
+				&--bottom
+					transform-origin: left bottom
+
+.scroll-lock
+	position: fixed
+	width: 100%
+	height: 100%
+	overflow: hidden

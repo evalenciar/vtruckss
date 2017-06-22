@@ -1,0 +1,29 @@
+.logo
+	position: relative
+	width: 170px
+	height: 130px
+	background-image: url(/assets/img/vtrucks_logo.png)
+	background-repeat: no-repeat
+	background-position-x: left
+	background-position-y: center
+	background-size: 170px auto
+
+	&__header
+		left: 80px
+		z-index: 3
+
+	&__footer
+
+		@extend .logo
+		position: absolute
+		left: 50%
+		transform: translate(-50%)
+		background-position-x: center
+		background-position-y: center
+		background-size: 100px auto
+
+	@media (max-width: 991px)
+
+		&__header
+			left: 30px
+			right: 10%
