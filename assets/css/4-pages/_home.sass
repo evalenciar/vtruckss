@@ -21,6 +21,7 @@
 		background-size: 65%
 		background-repeat-x: no-repeat
 		background-repeat-y: no-repeat
+		background-repeat: no-repeat
 		background-attachment: initial
 		background-origin: center
 		background-clip: initial
@@ -75,7 +76,7 @@
 	@media (max-width: 991px)
 
 		&::before
-			background-size: 90%
+			background-size: 80%
 
 		&__content
 			display: block
@@ -113,6 +114,8 @@
 					font-size: 16px
 
 	@media (max-width: 691px)
+
+		height: 60vh
 
 		&::before
 			background-size: 120%
@@ -497,8 +500,10 @@
 		font-size: 20px
 
 	@media (max-width: 991px)
-		&__wrapper
+		&__wrapper,
+		&__container
 			flex-direction: column
+			align-items: center
 
 		&__goback
 			display: none
@@ -506,9 +511,9 @@
 		&__title
 			font-size: 60px
 
-		&__container
-			flex-direction: column
-			align-items: center
+		// &__container
+		// 	flex-direction: column
+		// 	align-items: center
 
 		&__images,
 		&__specs
@@ -517,7 +522,7 @@
 		&__images
 			&--demo
 				img
-					height: 80px
+					height: 8vh
 
 		&__specs
 			margin-top: 25px
@@ -537,6 +542,42 @@
 			font-size: 35px
 			margin: 40px 0
 
+	@media (max-width: 740px)
+
+		&__title
+			font-size: 6.5vw
+
+		// &__images
+		// 	&--demo
+		// 		img
+		// 			height: 8vh
+
+		&__specs
+
+			&--data
+
+				dt,
+				dd
+					font-size: 15px
+
+		&__contact
+			font-size: 4vw
+
+	@media (max-width: 350px)
+
+		&__specs
+
+			&--title
+				font-size: 30px
+
+			&--data
+
+				dt,
+				dd
+					font-size: 12px
+
+		&__money
+			font-size: 30px
 
 
 
