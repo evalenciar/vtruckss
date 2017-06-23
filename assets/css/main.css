@@ -391,6 +391,11 @@ textarea {
     .logo__header {
       left: 30px;
       right: 10%; } }
+  @media (max-width: 691px) {
+    .logo, .logo__footer {
+      background-size: 120px auto; }
+      .logo__header {
+        left: 10px; } }
 
 .transform-link {
   font-weight: 700; }
@@ -417,6 +422,9 @@ textarea {
       color: #367f35;
       transition: background-color 0.4s ease-in-out;
       transition: color 0.4s ease-in-out; }
+  @media (max-width: 691px) {
+    .transform-link--big {
+      width: 80%; } }
 
 .button,
 button,
@@ -471,7 +479,7 @@ input[type="button"] {
   .title::after {
     content: "";
     display: block;
-    width: 450px;
+    width: 80%;
     height: 10px;
     background-color: #367f35;
     margin-left: auto;
@@ -664,6 +672,7 @@ input[type="button"] {
     background-size: 65%;
     background-repeat-x: no-repeat;
     background-repeat-y: no-repeat;
+    background-repeat: no-repeat;
     background-attachment: initial;
     background-origin: center;
     background-clip: initial; }
@@ -682,7 +691,7 @@ input[type="button"] {
       font-size: 576px; } }
   @media (max-width: 991px) {
     .introduction::before {
-      background-size: 90%; }
+      background-size: 80%; }
     .introduction__content {
       display: block;
       position: absolute;
@@ -712,10 +721,12 @@ input[type="button"] {
           opacity: 0;
           font-size: 16px; } }
   @media (max-width: 691px) {
-    .introduction::before {
-      background-size: 120%; } }
+    .introduction {
+      height: 60vh; }
+      .introduction::before {
+        background-size: 120%; } }
 
-/************************Truck Highlights**************** */
+/************************Main Trucks**************** */
 .maintrucks {
   position: relative;
   padding: 15px 0;
@@ -806,7 +817,6 @@ input[type="button"] {
       height: 50px;
       font-size: 20px; } }
 
-/************************* About ************************ */
 /************************* Inventory ************************ */
 .inventory {
   position: relative;
@@ -995,19 +1005,17 @@ input[type="button"] {
     margin: 10px 0;
     font-size: 20px; }
   @media (max-width: 991px) {
-    .details__wrapper {
-      flex-direction: column; }
+    .details__wrapper, .details__container {
+      flex-direction: column;
+      align-items: center; }
     .details__goback {
       display: none; }
     .details__title {
       font-size: 60px; }
-    .details__container {
-      flex-direction: column;
-      align-items: center; }
     .details__images, .details__specs {
       width: 100%; }
     .details__images--demo img {
-      height: 80px; }
+      height: 8vh; }
     .details__specs {
       margin-top: 25px; }
       .details__specs--title {
@@ -1020,6 +1028,22 @@ input[type="button"] {
     .details__contact {
       font-size: 35px;
       margin: 40px 0; } }
+  @media (max-width: 740px) {
+    .details__title {
+      font-size: 6.5vw; }
+    .details__specs--data dt,
+    .details__specs--data dd {
+      font-size: 15px; }
+    .details__contact {
+      font-size: 4vw; } }
+  @media (max-width: 350px) {
+    .details__specs--title {
+      font-size: 30px; }
+    .details__specs--data dt,
+    .details__specs--data dd {
+      font-size: 12px; }
+    .details__money {
+      font-size: 30px; } }
 
 .demo-opacity, .demo-hover-opacity:hover {
   opacity: 0.6; }
