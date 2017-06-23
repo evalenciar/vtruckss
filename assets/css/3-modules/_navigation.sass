@@ -39,6 +39,9 @@
 			&:hover
 				color: $c-hover
 
+		&--number
+			display: none
+
 	&__burger
 		display: none
 
@@ -86,7 +89,7 @@
 				.navigation__list
 
 					& > li
-						@for $i from 1 through 4
+						@for $i from 1 through 5
 							&:nth-child(#{$i}) a
 								transition: transform .3s * $i + .2s, color .2s ease-in-out
 
@@ -97,7 +100,7 @@
 								color: lighten($c-secondary, 15%)
 
 		&__list
-			height: 250px
+			height: 300px
 			flex-direction: column
 			align-items: center
 
@@ -109,6 +112,9 @@
 					color: $white
 					font-weight: 700
 					transition: transform 0s .4s
+
+			&--number
+				display: flex
 
 		&__burger
 			position: relative
