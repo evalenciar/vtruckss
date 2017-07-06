@@ -395,7 +395,9 @@ textarea {
     .logo, .logo__footer {
       background-size: 120px auto; }
       .logo__header {
-        left: 10px; } }
+        left: 10px; }
+      .logo__footer {
+        display: none; } }
 
 .transform-link {
   font-weight: 700; }
