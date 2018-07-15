@@ -398,6 +398,155 @@
 				height: 50px
 				font-size: 20px
 
+/***********************Sold Inventory**********************/
+
+.sold-inventory
+	position: relative
+	padding: 15px 0
+	background-color: $bg-secondary
+
+	&__wrapper
+		display: block
+		justify-content: space-between
+
+	&__more
+		position: relative
+		height: 60px
+		text-align: center
+
+	&__post
+		display: inline-block
+		width: 283px
+		margin-right: 8px
+		margin-bottom: 40px
+		background-color: $c-inventory
+		box-shadow: 5px 1px 30px 1px rgba(0,0,0,0.2)
+
+		&:nth-of-type(4n)
+			margin-right: 0
+
+		&-thumbnail
+			width: 100%
+			position: relative
+			//box-shadow: 5px 8px 30px 1px rgba(0,0,0,.21)
+
+			img
+				display: block
+				width: 100%
+				// max-height: 155px
+				z-index: 2
+				content: "SOLD"
+				position: absolute
+				width: 100%
+				top: 0
+				left: 0
+				text-align: center
+				padding: 5px 0
+				background-color: rgba($c-secondary,0.8)
+				color: #fff
+				font-size: 20px
+				text-transform: uppercase
+
+		&-excerpt
+			text-align: center
+
+			h3
+				background-color: $bg-secondary
+				color: $c-primary
+				font-size: 24px
+				margin: 0
+
+			p
+				font-size: 15px
+
+		&-money
+			width: 100%
+			background-color: $c-primary
+			color: $c-money
+			font-size: 20px
+			font-weight: bold
+			height: auto
+
+		&-details
+			height: 40px
+			transform: translateY(15%)
+
+	@media (max-width: 1315px)
+
+		&__post
+			width: 32.35%
+			margin-right: 8px
+
+			&:nth-of-type(4n)
+				margin-right: 8px
+
+			&:nth-of-type(3n)
+				margin-right: 0
+
+	@media (max-width: 991px)
+
+		&__heading
+			font-size: 48px
+
+		&__wrapper
+			flex-direction: column
+			align-items: center
+
+		&__post
+			width: 32.1%
+			margin-right: 8px
+
+			&:nth-of-type(4n)
+				margin-right: 8px
+
+			&:nth-of-type(3n)
+				margin-right: 0
+
+			&-thumbnail
+				img
+					display: block
+					width: 100%
+					max-height: none
+
+			&:last-child
+				margin-bottom: 0
+
+			&-excerpt
+				text-align: center
+
+				h3
+					margin-bottom: 10px
+
+	@media (max-width: 767px)
+
+		&__heading
+			font-size: 32px
+
+		&__post
+			width: 100%
+			margin-right: 0
+			margin-bottom: 80px
+
+			&:nth-of-type(4n)
+				margin-right: 0
+
+			&:nth-of-type(3n)
+				margin-right: 0
+
+			&-excerpt
+
+				h3
+					font-size: 30px
+
+				p
+					font-size: 20px
+
+			&-money
+				font-size: 25px
+
+			&-details
+				height: 50px
+				font-size: 20px
 /*********************** More Details **********************/
 
 .details
