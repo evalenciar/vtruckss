@@ -1,11 +1,11 @@
-    <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Inventory</title>
+  <title>Sold Trucks</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="Description" content="VTrucks Inventory: View our selection of trucks currently available for purchase.">
+  <meta name="Description" content="VTrucks Sold Inventory: View our SOLD trucks.">
   <meta name="Cesar Vega" content="Truck Sales">
   <link rel="stylesheet" href="../assets/css/main.css">
 </head>
@@ -19,7 +19,7 @@
                     <!--IMPROVE: Make text size bigger-->
 					<li><a href="http://vtruckss.com/index.html">Home</a></li>
 					<li><a href="http://vtruckss.com/inventory/">Inventory</a></li>
-                    <li><a href="http://vtruckss.com/sold-inventory/">Sold Trucks</a></li>
+                    <li><a href="http://vtruckss.com/sold-inventory/">Sold</a></li>
 					<li><a href="http://vtruckss.com/financing.html">Financing</a></li>
 					<li><a href="http://vtruckss.com/contact.html">Contact</a></li>
                     <li><a id="phone_number" class="navigation__list--number" href="#0" title="Call Now" alt="Phone Number">(281) 745-1566</a></li>
@@ -34,13 +34,13 @@
 		</div>
 	</div>
 	<!-- END SECTION: Navigation -->
-    <!-- SECTION: Inventory -->
+    <!-- SECTION: Sold Inventory -->
     <section id="inventory" class="inventory">
-        <h2 class="inventory__heading title">Inventory</h2>
+        <h2 class="inventory__heading title">Sold Trucks</h2>
         <!-- Start of Row -->
         <div class="inventory__wrapper wrapper--large">
             <article class="inventory__post">
-                <div class="inventory__post-thumbnail">
+                <div class="inventory__post-thumbnail sold">
                     <a href="http://vtruckss.com/inventory/2005-kenworth-dump/"><img src="http://vtruckss.com/inventory/2005-kenworth-dump/1.JPG" alt="2005 Kenworth Dump" title="2005 Kenworth Dump"></a>
                 </div>
                 <div class="inventory__post-excerpt">
@@ -51,8 +51,7 @@
                 </div>
             </article>
             <article class="inventory__post">
-                <!--SOLD: Insert "sold" after inventory__post-thumbnail >> Example: <div class="inventory__post-thumbnail sold"> -->
-                <div class="inventory__post-thumbnail ">
+                <div class="inventory__post-thumbnail sold">
                     <a href="http://vtruckss.com/inventory/2006-int-dump/"><img src="http://vtruckss.com/inventory/2006-int-dump/1.JPG" alt="2007 international Dump" title="2007 international Dump"></a>
                 </div>
                 <div class="inventory__post-excerpt">
@@ -63,7 +62,7 @@
                 </div>
             </article>
             <article class="inventory__post">
-                <div class="inventory__post-thumbnail">
+                <div class="inventory__post-thumbnail sold">
                     <a href="http://vtruckss.com/inventory/2008-mack-dump/"><img src="http://vtruckss.com/inventory/2008-mack-dump/1.JPG" alt="2008-Mack- Dump" title="2008-Mack-Dump"></a>
                 </div>
                 <div class="inventory__post-excerpt">
@@ -73,7 +72,7 @@
                     <a class="transform-link inventory__post-details" href="http://vtruckss.com/inventory/2008-mack-dump/">View Details</a>
                 </div>
             </article>                                                                                   <article class="inventory__post">
-                <div class="inventory__post-thumbnail">
+                <div class="inventory__post-thumbnail sold">
                     <a href="http://vtruckss.com/inventory/2006-mack-vision/"><img src="http://vtruckss.com/inventory/2006-mack-vision/5.JPG" alt="2006 Mack Vision" title="2006 Mack Vision"></a>
                 </div>
                 <div class="inventory__post-excerpt">
@@ -84,8 +83,7 @@
                 </div>
             </article>         
             <article class="inventory__post">
-                <!--SOLD: Insert "sold" after inventory__post-thumbnail >> Example: <div class="inventory__post-thumbnail sold"> -->
-                <div class="inventory__post-thumbnail ">
+                <div class="inventory__post-thumbnail sold">
                     <a href="http://vtruckss.com/inventory/2007-int-dump-blue/"><img src="http://vtruckss.com/inventory/2007-int-dump-blue/1.JPG" alt="2007 International" title="2007 International "></a>
                 </div>
                 <div class="inventory__post-excerpt">
@@ -129,7 +127,7 @@
                 </div>
             </article>
             <article class="inventory__post">
-                <div class="inventory__post-thumbnail ">
+                <div class="inventory__post-thumbnail sold">
                     <a href="http://vtruckss.com/inventory/2009-cascadia-sleeper/"><img src="http://vtruckss.com/inventory/2009-cascadia-sleeper/1.JPG" alt="2009 Freightliner Cascadia" title="2009 Freightliner Cascadia"></a>
                 </div>
                 <div class="inventory__post-excerpt">
@@ -140,7 +138,7 @@
                 </div>
             </article>
             <article class="inventory__post">
-                <div class="inventory__post-thumbnail ">
+                <div class="inventory__post-thumbnail sold">
                     <a href="http://vtruckss.com/inventory/2007-pet-386/"><img src="http://vtruckss.com/inventory/2007-pet-386/1.JPG" alt="2007 Peterbilt 386" title="2007 Peterbilt 386"></a>
                 </div>
                 <div class="inventory__post-excerpt">
@@ -165,15 +163,7 @@
     </section>
     <!-- END SECTION: inventory -->
     <!-- SECTION: Footer -->
-	<footer class="footer">
-		<div class="footer__wrapper wrapper--large">
-			<p class="footer__copyright no-margin">&copy; 2017 VTrucks<br>Call Now: (281) 745-1566</p>
-			<a class="logo logo__footer" href="#0"></a>
-            <p class="footer__credit no-margin">Website designed by:<br><a class="transform-link" href="mailto:emmanuelvalenciar@gmail.com" target="_blank" title="Click to Contact">Emmanuel Valencia</a></p>
-            <!--OPTIONAL: Phone number
-            <a id="phone_number" class="footer__number" title="Call Now" alt="Phone Number">Call Now: (281) 745-1566</a>-->
-		</div>
-	</footer>
+        {% include footer.html %}
 	<!-- END SECTION: Footer -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
 	<!-- jQuery local fallback -->
