@@ -715,7 +715,7 @@ input[type="button"] {
           opacity: 0;
           font-size: 16px; }
         .introduction__content-el--description {
-          transform: matrix(1.01107, 0, 0, 1.01107, 0, 0);
+          transform: matrix(1.0110731102, 0, 0, 1.0110731102, 0, 0);
           color: #fff;
           font-size: 4vw;
           text-align: center;
